@@ -1,0 +1,18 @@
+pickle - 把python对象直接保存到文件里，而不需要把他们转化为字符串，也不用底层的文件访问操作把它们写入到一个二进制文件里。
+cPickle - 是pickle的一个更快的c语言编译版本。
+shelve - 提供Python对象的序列化和存储转换，以及类似字典和文件的对象，可以完成Python对象的永久性存储，又不需要启动数据库软件
+base64 - 提供二进制字符串和文本字符串间的编码、解码操作
+binascii - 提供二进制和ASCII编码的二进制字符串间的编码、解码操作
+bz2 - 提供BZ2格式的压缩文件访问
+csv - 访问csv文件（逗号分隔文件）
+filecmp -用于比较目录和文件
+fileinput - 提供多个文本文件的行迭代器
+getopt/optparse - 提供命令行参数的解析、处理
+glob/fnmatch -提供Unix样式的通配符匹配的功能
+gzip / zilib - 读写GNU zip(gzip)文件（压缩需要zlib模块）
+shutil -提供高级文件访问功能
+c/StringIO - 对字符串对象提供类文件接口
+tarfile - 读写TAR归档文件，支持压缩文件
+tempfile -创建一个临时文件（名）
+uu - uu格式的编码和解码
+zipfile - 用于读取ZIP归档文件的工具
