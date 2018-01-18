@@ -36,3 +36,9 @@ data = "2018/01/23"
 list = data.split('/')
 for item in list:
     print item
+    
+lines = ['sdfs\n', '2sdf\n']
+str = lines[0]
+print len(str)
+#去掉尾部的'\n'使用rstrip()方法
+print len(str.rstrip())
