@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>
+			CGI DEMO（静态页面）
+		</title>
+	</head>
+	<body>
+		<h3>Friends List for:<i>NEW USER</i></h3>
+		<form ACTION="/cgi-bin/friendsA.py">
+		<b>Enter your name:</b>
+		<input TYPE=text NAME=person VALUE="NEWUSER" SIZE=15>
+		<p><b>How many friends you have?</b>
+		<input TYPE=radio NAME=howmany VALUE="0" checked> 0
+		<input type=radio NAME=howmany VALUE="10"> 10
+		<input type=radio NAME=howmany VALUE="20"> 20
+		<p><input type=submit>
+		</form>	
+	</body>
+</html>
