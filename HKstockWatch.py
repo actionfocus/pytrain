@@ -26,7 +26,7 @@ class Frame1(wx.Frame):
     
     sheet1 = workBook.get_sheet_by_name('Sheet1')
 
-    for r in range(5): #目前需要根据行数来手动设置
+    for r in range(170): #目前需要根据行数来手动设置
         code=sheet1.cell(row=r+2,column=2)
         codelist.append(str(code.value))
         price=sheet1.cell(row=r+2,column=3)
@@ -69,10 +69,10 @@ class Frame1(wx.Frame):
             del ex_df
             del ex_df_new
             del code
-            for cycle in range(0,60):
+            for cycle in range(0,600):
                 time.sleep(1)
-                self.text1.AppendText(".")
-            self.text1.AppendText("\n") 
+                #self.text1.AppendText(".")
+            self.text1.AppendText("-----\n") 
         self.text1.AppendText("Stopped.\n")
         
     def OnClick(self,text):

@@ -31,13 +31,13 @@ class Frame1(wx.Frame):
     
     sheet1 = workBook.get_sheet_by_name('Sheet1')
 
-    for r in range(34): #目前需要根据行数来手动设置
+    for r in range(35): #目前需要根据行数来手动设置
         code=sheet1.cell(row=r+2,column=2)
         codelist.append(str(code.value))
         price=sheet1.cell(row=r+2,column=3)
         buy_price_list.append(price.value)
 
-    var_percent_criteria=5 #定义偏离幅度，需要手工调节
+    var_percent_criteria=9 #定义偏离幅度，需要手工调节
     set_buy_price=pd.Series(buy_price_list,index=codelist)
     stopflag=False
     
@@ -74,10 +74,10 @@ class Frame1(wx.Frame):
             del ex_df
             del ex_df_new
             del code
-            for cycle in range(0,180):
+            for cycle in range(0,300):
                 time.sleep(1)
-                self.text1.AppendText(".")
-            self.text1.AppendText("\n") 
+                #self.text1.AppendText(".")
+            self.text1.AppendText("-----\n") 
         self.text1.AppendText("Stopped.\n")
         
     def OnClick(self,text):
