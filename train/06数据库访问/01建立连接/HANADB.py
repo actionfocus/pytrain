@@ -2,7 +2,7 @@
 """
 Created on Sat Jan 20 23:20:36 2018
 
-@author: I311936
+@author: actionfocus
 """
 import pyhdb
 

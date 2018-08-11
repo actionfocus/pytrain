@@ -2,7 +2,7 @@
 """
 Created on Sun Jan 14 21:24:09 2018
 
-@author: I311936
+@author: actionfocus
 """
 
 str = "  Sdsf sdsf  "

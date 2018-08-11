@@ -10,7 +10,7 @@ import re
 import pandas as pd
 import requests
 
-stockcode = 'sz002049'
+stockcode = 'sh600820'
 
 ff_url = 'http://qt.gtimg.cn/q=ff_'+stockcode
 

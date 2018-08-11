@@ -23,7 +23,7 @@ workBook = pyxl.load_workbook('C:/laptop/00Python/HKList.xlsx')
     
 sheet1 = workBook.get_sheet_by_name('Sheet1')
 
-for r in range(170): #目前需要根据行数来手动设置
+for r in range(171): #目前需要根据行数来手动设置
     code=sheet1.cell(row=r+2,column=2)
     codelist.append(str(code.value))
 

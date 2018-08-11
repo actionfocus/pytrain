@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jan 30 22:13:15 2018
+Created on Mon Jun 18 22:25:29 2018
 
 @author: actionfocus
 """
@@ -19,20 +19,22 @@ import re
  
 class Frame1(wx.Frame):
     
+    var_percent_criteria=10 #定义偏离幅度，需要手工调节
+    
     codelist=[]
     buy_price_list=[]
  
-    workBook = pyxl.load_workbook('C:/laptop/00Python/HKList.xlsx')
+    workBook = pyxl.load_workbook('C:/laptop/00Python/ETFListMonitor.xlsx')
     
     sheet1 = workBook.get_sheet_by_name('Sheet1')
 
-    for r in range(3382): #目前需要根据行数来手动设置,Excel行值-1
+    for r in range(153): #目前需要根据行数来手动设置,Excel行值-1
         code=sheet1.cell(row=r+2,column=2)
         codelist.append(str(code.value))
         price=sheet1.cell(row=r+2,column=3)
         buy_price_list.append(price.value)
 
-    var_percent_criteria=10 #定义偏离幅度，需要手工调节
+    
     set_buy_price=pd.Series(buy_price_list,index=codelist)
     stopflag=False
     
