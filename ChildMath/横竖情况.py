@@ -40,7 +40,7 @@ def disp(n):
         return res2
 
 #disp(n)中n为火柴棒的个数    
-res3 = disp(5)
+res3 = disp(4)
 
 count=1
 for each in res3:
